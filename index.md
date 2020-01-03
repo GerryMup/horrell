@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US"><head><!-- Created by Artisteer v4.1.0.59861 -->
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+
+    <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="style.css" media="screen">
+    <!--[if lte IE 7]><link rel="stylesheet" href="style.ie7.css" media="screen" /><![endif]-->
+    <link rel="stylesheet" href="style.responsive.css" media="all">
+
+
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+    <script src="script.responsive.js"></script>
+<meta name="description" content="Description">
+<meta name="keywords" content="Keywords">
+
+
+<script>jQuery(function($) {
+    'use strict';
+    if ($.fn.slider) {
+        $(".art-slidecontainertravelinstyle").each(function () {
+            var slideContainer = $(this), tmp;
+            var inner = $(".art-slider-inner", slideContainer);
+            var helper = null;
+
+            if ($.support.transition) {
+                helper = new BackgroundHelper();
+                helper.init("fade", "next", $(".art-slide-item", inner).first().css($.support.transition.prefix + "transition-duration"));
+                inner.children().each(function () {
+                    helper.processSlide($(this));
+                });
+
+            }
+
+
+            inner.children().eq(0).addClass("active");
+            slideContainer.slider({
+                pause: 2600,
+                speed: 600,
+                repeat: true,
+                animation: "fade",
+                direction: "next",
+                navigator: slideContainer.siblings(".art-slidenavigatortravelinstyle"),
+                helper: helper                
+            });
+        });
+    }
+});
+</script><style>.art-content .art-postcontent-0 .layout-item-0 { color: #D1D1D1; background: #000000;  }
+.art-content .art-postcontent-0 .layout-item-1 { color: #D1D1D1; padding: 10px;  }
+.art-content .art-postcontent-0 .layout-item-2 { margin-top: 16px;margin-left: 0px;  }
+.art-content .art-postcontent-0 .layout-item-3 { border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-width:2px;border-top-color:#865A41;border-right-color:#865A41;border-bottom-color:#865A41;border-left-color:#865A41;  border-collapse: separate; border-radius: 40px;  }
+.art-content .art-postcontent-0 .layout-item-4 { padding-top: 12px;padding-right: 12px;padding-bottom: 12px;padding-left: 50px; vertical-align: top; border-radius: 40px;  }
+.art-content .art-postcontent-0 .layout-item-5 { margin-top: 16px;  }
+.art-content .art-postcontent-0 .layout-item-6 { border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-width:0px;border-top-color:#865A41;border-right-color:#865A41;border-bottom-color:#865A41;border-left-color:#865A41;  border-collapse: separate; border-radius: 10px;  }
+.art-content .art-postcontent-0 .layout-item-7 { padding: 10px; border-radius: 10px;  }
+.art-content .art-postcontent-0 .layout-item-8 { border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-color:#865A41;border-right-color:#865A41;border-bottom-color:#865A41;border-left-color:#865A41;  border-collapse: separate; border-radius: 10px;  }
+.art-content .art-postcontent-0 .layout-item-9 { padding: 10px;  }
+.art-content .art-postcontent-0 .layout-item-10 { border-spacing: 10px 0px; border-collapse: separate;  }
+.art-content .art-postcontent-0 .layout-item-11 { border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-color:#865A41;border-right-color:#865A41;border-bottom-color:#865A41;border-left-color:#865A41; padding: 10px; border-radius: 10px;  }
+.art-content .art-postcontent-0 .layout-item-12 { border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-color:#865A41;border-right-color:#865A41;border-bottom-color:#865A41;border-left-color:#865A41; padding-top: 10px;padding-right: 3px;padding-bottom: 10px;padding-left: 10px; border-radius: 10px;  }
+.ie7 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+.ie6 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+
+.art-slidecontainertravelinstyle {
+    position: relative;
+        width: 1024px;
+    height: 576px;
+        }
+
+.art-slidecontainertravelinstyle .art-slide-item
+{
+
+}
+
+
+
+.art-slidecontainertravelinstyle .art-slide-item {
+    -webkit-transition: 600ms ease-in-out opacity;
+    -moz-transition: 600ms ease-in-out opacity;
+    -ms-transition: 600ms ease-in-out opacity;
+    -o-transition: 600ms ease-in-out opacity;
+    transition: 600ms ease-in-out opacity;
+    position: absolute;
+    display: none;
+	left: 0;
+	top: 0;
+	opacity: 0;
+    width:  100%;
+    height: 100%;
+}
+
+.art-slidecontainertravelinstyle .active, .art-slidecontainertravelinstyle .next, .art-slidecontainertravelinstyle .prev {
+    display: block;
+}
+
+.art-slidecontainertravelinstyle .active {
+    opacity: 1;
+}
+
+.art-slidecontainertravelinstyle .next, .art-slidecontainertravelinstyle .prev {
+    width: 100%;
+}
+
+.art-slidecontainertravelinstyle .next.forward, .art-slidecontainertravelinstyle .prev.back {
+    opacity: 1;
+}
+
+.art-slidecontainertravelinstyle .active.forward {
+    opacity: 0;
+}
+
+.art-slidecontainertravelinstyle .active.back {
+    opacity: 0;
+}
+
+
+.art-slidetravelinstyle0 {
+    background-image:  url('images/slidetravelinstyle0.jpg');
+        background-size:  100%;
+        background-position:  0 0;
+    background-repeat: no-repeat;
+}
+.art-slidetravelinstyle1 {
+    background-image:  url('images/slidetravelinstyle1.jpg');
+        background-size:  100%;
+        background-position:  0 0;
+    background-repeat: no-repeat;
+}
+.art-slidetravelinstyle2 {
+    background-image:  url('images/slidetravelinstyle2.jpg');
+        background-size:  100%;
+        background-position:  0 0;
+    background-repeat: no-repeat;
+}
+.art-slidetravelinstyle3 {
+    background-image:  url('images/slidetravelinstyle3.jpg');
+        background-size:  100%;
+        background-position:  0 0;
+    background-repeat: no-repeat;
+}
+
+
+.art-slidenavigatortravelinstyle {
+  display: inline-block;
+  position: absolute;
+  direction: ltr !important;
+  top: 531px;
+  left: 88.28%;
+  z-index: 101;
+  line-height: 0 !important;
+  -webkit-background-origin: border !important;
+  -moz-background-origin: border !important;
+  background-origin: border-box !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+    white-space: nowrap;
+    }
+.art-slidenavigatortravelinstyle
+{
+background: #865A41;background: transparent;
+
+
+
+padding:15px;
+
+
+
+
+
+}
+.art-slidenavigatortravelinstyle > a
+{
+background: #262626;
+-webkit-border-radius:40%;-moz-border-radius:40%;border-radius:40%;
+
+border:1px solid #9DF00F;
+
+margin:0 10px 0 0;
+
+width: 15px;
+
+height: 15px;
+}
+.art-slidenavigatortravelinstyle > a.active
+{
+background: #CFADAB;background: #CFADAB;background: #CFADAB;background: #CFADAB;background: #CFADAB;background: #CFADAB;background: #CFADAB;-svg-background: #CFADAB;
+-webkit-border-radius:40%;-moz-border-radius:40%;border-radius:40%;
+
+border:1px solid #CFADAB;
+
+margin:0 10px 0 0;
+
+width: 15px;
+
+height: 15px;
+}
+.art-slidenavigatortravelinstyle > a:hover
+{
+background: #85504C;background: #85504C;background: #85504C;background: #85504C;background: #85504C;background: #85504C;background: #85504C;-svg-background: #85504C;
+-webkit-border-radius:40%;-moz-border-radius:40%;border-radius:40%;
+
+border:1px solid #A66864;
+
+margin:0 10px 0 0;
+
+width: 15px;
+
+height: 15px;
+}
+
+</style></head>
+<body>
+<div id="art-main">
+<header class="art-header">
+
+
+    <div class="art-shapes">
+
+            </div>
+
+
+
+
+                
+                    
+</header>
+<nav class="art-nav">
+    <div class="art-nav-inner">
+    <ul class="art-hmenu"><li><a href="home.html" class="active">Home</a></li><li><a href="products.html">Products</a></li><li><a href="contact-us.html">Contact Us</a></li><li><a href="about-us.html">About Us</a></li></ul> 
+        </div>
+    </nav>
+<div class="art-sheet clearfix">
+            <div class="art-layout-wrapper">
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content"><article class="art-post art-article">
+                                
+                                                
+                <div class="art-postcontent art-postcontent-0 clearfix"><div class="art-content-layout layout-item-0">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-1" style="width: 100%" >
+        <p style="text-align: center;"><span style="font-size: 18px; font-weight: bold;">QUALITY! STYLE! FASHION!</span></p>
+    </div>
+    </div>
+</div>
+<div class="art-content-layout-wrapper layout-item-2">
+<div class="art-content-layout layout-item-3">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-4" style="width: 100%" >
+        <p style="text-align: center;"></p><div id="travelinstyle" style="position: relative; display: inline-block; z-index: 0; margin: 5px;  border-width: 0px;  " class="art-collage">
+<div class="art-slider art-slidecontainertravelinstyle" data-width="1024" data-height="576">
+    <div class="art-slider-inner">
+<div class="art-slide-item art-slidetravelinstyle0">
+
+</div>
+<div class="art-slide-item art-slidetravelinstyle1">
+
+</div>
+<div class="art-slide-item art-slidetravelinstyle2">
+
+</div>
+<div class="art-slide-item art-slidetravelinstyle3">
+
+</div>
+
+    </div>
+</div>
+<div class="art-slidenavigator art-slidenavigatortravelinstyle" data-left="88.28">
+<a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a>
+</div>
+
+
+
+    </div>
+
+        
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+        <p style="text-align: center;"><br></p>
+    </div>
+    </div>
+</div>
+</div>
+<div class="art-content-layout-wrapper layout-item-5">
+<div class="art-content-layout layout-item-6">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-7" style="width: 100%" >
+        <h4 style="text-align: center;"><span style="font-size: 26px; color: #000000;">Introduction</span></h4>
+    </div>
+    </div>
+</div>
+</div>
+<div class="art-content-layout-wrapper layout-item-5">
+<div class="art-content-layout layout-item-8">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-7" style="width: 100%" >
+        <p><span style="color: #000000;">Horrell Leather Smart Creations is a 100% black owned company operating in the leather products industry. We specialize in high quality leather products such as belts and handbags (we use only pure leather and not bonded leather, synthetic or leatherette). However, we intend to expand our product offerings into other related products in the near future in response to the demands of our existing customers. We strive to use only natural and high-quality inputs in our manufacturing processes, cognizant of the impact that our manufacturing practices have on the environment</span>.</p>
+    </div>
+    </div>
+</div>
+</div>
+<div class="art-content-layout-wrapper layout-item-5">
+<div class="art-content-layout layout-item-6">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-7" style="width: 100%" >
+        <h4 style="text-align: center;"><span style="font-size: 26px; color: #000000;">Executive Summary</span></h4>
+    </div>
+    </div>
+</div>
+</div>
+<div class="art-content-layout-wrapper layout-item-5">
+<div class="art-content-layout layout-item-8">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-7" style="width: 100%" >
+        <p><span style="color: #000000;">This business plan outlines the structure and work flow processes of Horrell Leather Smart Creations. It shows the strategic and implementation plan thereby articulating how best performance is given. The purpose of our business is to provide the market with affordable, quality, handcrafted leather products.</span>&nbsp;<span style="color: #000000;">Through this proposal we seek to be the preferred supplier of all leather accessories to both wholesalers and retailers. In partnership with your organization we are able to tailor make any leather accessories according to your specifications and satisfaction. All our products are ‘proudly South African’</span></p>
+    </div>
+    </div>
+</div>
+</div>
+<div class="art-content-layout-wrapper layout-item-5">
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-9" style="width: 100%" >
+        <p style="text-align: center;"><span style="font-weight: bold; font-size: 26px; color: #000000;">OUR SERVICES</span></p>
+    </div>
+    </div>
+</div>
+</div>
+<div class="art-content-layout-wrapper layout-item-5">
+<div class="art-content-layout layout-item-10">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-11" style="width: 25%" >
+        <h4><span style="color: #000000;">Branding</span></h4><p><img width="246" height="246" alt="" class="art-lightbox" src="images/700by700bag.jpg"></p><p><span style="color: #000000;">Company branding on leather products and accessories</span></p>
+        <p><a href="branding.html" class="art-button" title="Learn more about Branding">Learn more</a></p>
+    </div><div class="art-layout-cell layout-item-11" style="width: 25%" >
+        <h4><span style="color: #000000;">Personalized Products</span></h4>
+         <img width="245" height="245" alt="" class="art-lightbox" src="images/branded-wallet.jpg"><p><span style="color: #000000;">Personalized names, slogans, messages, etc. on leather products and accessories</span></p>
+        <p><a href="personalized.html" class="art-button" title="Learn more about personalized products">Learn more</a></p>
+    </div><div class="art-layout-cell layout-item-11" style="width: 25%" >
+        <h4><span style="color: #000000;">Flexibility</span></h4>
+         <img width="244" height="244" alt="" class="art-lightbox" src="images/700by700Bags.jpg"><p><span style="color: #000000;">Flexibility in terms of minimum quantities per color or design required</span></p>
+        <p><a href="flexibility.html" class="art-button" title="Learn more about product flexibility">Learn more</a></p>
+    </div><div class="art-layout-cell layout-item-12" style="width: 25%" >
+        <h4><span style="color: #000000;">South African Leather</span></h4>
+         <img width="244" height="244" alt="" class="art-lightbox" src="images/700by700bag2.jpg">
+        <p><span style="color: #000000;">Completely South African leather products and accessories</span></p>
+        <p><a href="sa-leather.html" class="art-button" title="Learn more about South African Leather">Learn more</a></p>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+                                
+                
+
+</article></div>
+                    </div>
+                </div>
+            </div>
+    </div>
+<footer class="art-footer">
+  <div class="art-footer-inner">
+<div class="art-content-layout-wrapper layout-item-0">
+<div class="art-content-layout layout-item-1">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-2" style="width: 25%">
+        <p style="text-align: left;"><span style="font-size: 16px; font-weight: bold;">Address</span></p><p style="text-align: left;"><span style="color: #000000;">1198 Agulhas Road&nbsp;</span></p><p style="text-align: left;"><span style="color: #000000;">Bloubosrand&nbsp;</span></p><p style="text-align: left;"><span style="color: #000000;">Fourways 2188</span><span style="font-size: 16px; font-weight: bold;"><br></span></p><p style="text-align: left;"><span style="color: #000000;">2191</span></p><p style="text-align: left;"><span style="font-size: 16px; font-weight: bold;"><br></span></p>
+    </div><div class="art-layout-cell layout-item-2" style="width: 25%">
+        <p style="text-align: left;"><span style="font-weight: bold; font-size: 16px;">Looking for Assistance?</span></p><p style="text-align: left;"><span style="font-weight: bold; font-size: 16px;">-</span> <a href="contact-us.html" title="See our contact information"><span style="color: rgb(147, 64, 16);">Contact Us</span></a></p><p style="text-align: left;"><span style="font-weight: bold; font-size: 16px;">-</span> Customer Care</p><p style="text-align: left; padding-left: 20px;">078 022 5890</p><p style="text-align: left; padding-left: 20px;">email@email.co.za</p><p style="text-align: left;"><span style="font-size: 16px; font-weight: bold; color: #000000;">- <a href="faqs.html" title="See the answers to questions that other people had..."><span style="color: rgb(158, 63, 16);">FAQ's</span></a></span><span style="font-weight: bold;"></span></p><p style="text-align: left; padding-left: 20px;"><span style="font-weight: bold;"><br></span></p>
+    </div><div class="art-layout-cell layout-item-2" style="width: 25%">
+        <p style="text-align: left;"><span style="font-weight: bold; font-size: 16px;">Privacy Policies</span></p><p style="text-align: left;"><span style="font-size: 16px; font-weight: bold;">-&nbsp;</span><a href="terms-and-conditions.html" title="View our terms and conditions">Terms and Conditions</a></p><p style="text-align: left;"><span style="font-size: 16px; font-weight: bold;">-</span> Pre-Order your items</p><p style="text-align: left;"><br></p><p><br></p>
+    </div><div class="art-layout-cell layout-item-2" style="width: 25%">
+        <p style="text-align: left;"><span style="font-weight: bold; font-size: 16px;">Social Media Platforms</span></p><p style="text-align: left;"><br></p><p style="text-align: left;">&nbsp;<a href="http://www.facebook.com/" title="Visit our facebook page" class="art-facebook-tag-icon" style="line-height: 32px;"></a>&nbsp;&nbsp;&nbsp;<a href="http://twitter.com/" title="Visit our twitter page" class="art-twitter-tag-icon" style="line-height: 32px;"></a>&nbsp; &nbsp;&nbsp;<a href="http:www.instagram.com/" title="Visit our instagram page" class="art-rss-tag-icon" style="line-height: 51px;"></a>&nbsp;&nbsp;<br></p>
+    </div>
+    </div>
+</div>
+</div>
+<div class="art-content-layout-wrapper layout-item-0">
+<div class="art-content-layout layout-item-1">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-2" style="width: 100%">
+        Horrell Peterson © 2019. All Rights Reserved.&nbsp;<a href="#">Privacy Policy</a>
+    </div>
+    </div>
+</div>
+</div>
+
+  </div>
+</footer>
+
+</div>
+
+
+</body></html>
