@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US"><head><!-- Created by Artisteer v4.1.0.59861 -->
+    <meta charset="utf-8">
+    <title>Personalized Products</title>
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+
+    <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="style.css" media="screen">
+    <!--[if lte IE 7]><link rel="stylesheet" href="style.ie7.css" media="screen" /><![endif]-->
+    <link rel="stylesheet" href="style.responsive.css" media="all">
+
+
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+    <script src="script.responsive.js"></script>
+
+
+<script>jQuery(function($) {
+    'use strict';
+    if ($.fn.slider) {
+        $(".art-slidecontainer700by700Wallet").each(function () {
+            var slideContainer = $(this), tmp;
+            var inner = $(".art-slider-inner", slideContainer);
+            var helper = null;
+
+            if ($.support.transition) {
+                helper = new BackgroundHelper();
+                helper.init("fade", "next", $(".art-slide-item", inner).first().css($.support.transition.prefix + "transition-duration"));
+                inner.children().each(function () {
+                    helper.processSlide($(this));
+                });
+
+            }
+
+
+            inner.children().eq(0).addClass("active");
+            slideContainer.slider({
+                pause: 2600,
+                speed: 600,
+                repeat: true,
+                animation: "fade",
+                direction: "next",
+                navigator: slideContainer.siblings(".art-slidenavigator700by700Wallet"),
+                helper: helper                
+            });
+        });
+    }
+});
+</script><style>.art-content .art-postcontent-0 .layout-item-0 {  border-collapse: separate;  }
+.art-content .art-postcontent-0 .layout-item-1 { border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-width:2px;border-top-color:#865A41;border-right-color:#865A41;border-bottom-color:#865A41;border-left-color:#865A41; padding: 0px; border-radius: 10px;  }
+.ie7 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+.ie6 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+
+.art-slidecontainer700by700Wallet {
+    position: relative;
+        width: 566px;
+    height: 566px;
+        }
+
+.art-slidecontainer700by700Wallet .art-slide-item
+{
+
+}
+
+
+
+.art-slidecontainer700by700Wallet .art-slide-item {
+    -webkit-transition: 600ms ease-in-out opacity;
+    -moz-transition: 600ms ease-in-out opacity;
+    -ms-transition: 600ms ease-in-out opacity;
+    -o-transition: 600ms ease-in-out opacity;
+    transition: 600ms ease-in-out opacity;
+    position: absolute;
+    display: none;
+	left: 0;
+	top: 0;
+	opacity: 0;
+    width:  100%;
+    height: 100%;
+}
+
+.art-slidecontainer700by700Wallet .active, .art-slidecontainer700by700Wallet .next, .art-slidecontainer700by700Wallet .prev {
+    display: block;
+}
+
+.art-slidecontainer700by700Wallet .active {
+    opacity: 1;
+}
+
+.art-slidecontainer700by700Wallet .next, .art-slidecontainer700by700Wallet .prev {
+    width: 100%;
+}
+
+.art-slidecontainer700by700Wallet .next.forward, .art-slidecontainer700by700Wallet .prev.back {
+    opacity: 1;
+}
+
+.art-slidecontainer700by700Wallet .active.forward {
+    opacity: 0;
+}
+
+.art-slidecontainer700by700Wallet .active.back {
+    opacity: 0;
+}
+
+
+.art-slide700by700Wallet0 {
+    background-image:  url('images/slide700by700Wallet0.jpg');
+        background-size:  100%;
+        background-position:  0 0;
+    background-repeat: no-repeat;
+}
+.art-slide700by700Wallet1 {
+    background-image:  url('images/slide700by700Wallet1.jpg');
+        background-size:  100%;
+        background-position:  0 0;
+    background-repeat: no-repeat;
+}
+.art-slide700by700Wallet2 {
+    background-image:  url('images/slide700by700Wallet2.jpg');
+        background-size:  100%;
+        background-position:  0 0;
+    background-repeat: no-repeat;
+}
+
+
+.art-slidenavigator700by700Wallet {
+  display: inline-block;
+  position: absolute;
+  direction: ltr !important;
+  top: 526px;
+  left: 85.87%;
+  z-index: 101;
+  line-height: 0 !important;
+  -webkit-background-origin: border !important;
+  -moz-background-origin: border !important;
+  background-origin: border-box !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+    white-space: nowrap;
+    }
+.art-slidenavigator700by700Wallet
+{
+background: #C8F679;background: transparent;background: transparent;background: transparent;background: transparent;background: transparent;background: transparent;-svg-background: transparent;
+
+
+
+padding:15px;
+
+
+
+
+
+}
+.art-slidenavigator700by700Wallet > a
+{
+background: #7BBB0C;background: #7BBB0C;background: #7BBB0C;background: #7BBB0C;background: #7BBB0C;background: #7BBB0C;background: #7BBB0C;-svg-background: #7BBB0C;
+-webkit-border-radius:40%;-moz-border-radius:40%;border-radius:40%;
+
+border:1px solid #9DF00F;
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.art-slidenavigator700by700Wallet > a.active
+{
+background: #CFADAB;background: #CFADAB;background: #CFADAB;background: #CFADAB;background: #CFADAB;background: #CFADAB;background: #CFADAB;-svg-background: #CFADAB;
+-webkit-border-radius:40%;-moz-border-radius:40%;border-radius:40%;
+
+border:1px solid #CFADAB;
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.art-slidenavigator700by700Wallet > a:hover
+{
+background: #85504C;background: #85504C;background: #85504C;background: #85504C;background: #85504C;background: #85504C;background: #85504C;-svg-background: #85504C;
+-webkit-border-radius:40%;-moz-border-radius:40%;border-radius:40%;
+
+border:1px solid #A66864;
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+
+</style></head>
+<body>
+<div id="art-main">
+<header class="art-header">
+
+
+    <div class="art-shapes">
+
+            </div>
+
+
+
+
+                
+                    
+</header>
+<nav class="art-nav">
+    <div class="art-nav-inner">
+    <ul class="art-hmenu"><li><a href="home.html" class="">Home</a></li><li><a href="products.html" class="">Products</a></li><li><a href="contact-us.html" class="">Contact Us</a></li><li><a href="about-us.html" class="">About Us</a></li></ul> 
+        </div>
+    </nav>
+<div class="art-sheet clearfix">
+            <div class="art-layout-wrapper">
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content"><article class="art-post art-article">
+                                <h2 class="art-postheader">Personalized Products</h2>
+                                                
+                <div class="art-postcontent art-postcontent-0 clearfix"><div class="art-content-layout layout-item-0">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-1" style="width: 50%" >
+        <p></p><div id="700by700Wallet" style="position: relative; display: inline-block; z-index: 0; margin: 5px;  border-width: 0px;  " class="art-collage">
+<div class="art-slider art-slidecontainer700by700Wallet" data-width="566" data-height="566">
+    <div class="art-slider-inner">
+<div class="art-slide-item art-slide700by700Wallet0">
+
+</div>
+<div class="art-slide-item art-slide700by700Wallet1">
+
+</div>
+<div class="art-slide-item art-slide700by700Wallet2">
+
+</div>
+
+    </div>
+</div>
+<div class="art-slidenavigator art-slidenavigator700by700Wallet" data-left="85.87">
+<a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a>
+</div>
+
+
+
+    </div>
+
+        
+        <p><br></p>
+    </div><div class="art-layout-cell" style="width: 50%" >
+        <p style="padding-left: 20px;">Here we have a slide show of some personalized products and then on the right, we describe exactly what it means.</p>
+    </div>
+    </div>
+</div>
+</div>
+                                
+                
+
+</article></div>
+                    </div>
+                </div>
+            </div>
+    </div>
+<footer class="art-footer">
+  <div class="art-footer-inner">
+<div class="art-content-layout-wrapper layout-item-0">
+<div class="art-content-layout layout-item-1">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-2" style="width: 25%">
+        <p style="text-align: left;"><span style="font-size: 16px; font-weight: bold;">Address</span></p><p style="text-align: left;"><span style="color: #000000;">1198 Agulhas Road&nbsp;</span></p><p style="text-align: left;"><span style="color: #000000;">Bloubosrand&nbsp;</span></p><p style="text-align: left;"><span style="color: #000000;">Fourways 2188</span><span style="font-size: 16px; font-weight: bold;"><br></span></p><p style="text-align: left;"><span style="color: #000000;">2191</span></p><p style="text-align: left;"><span style="font-size: 16px; font-weight: bold;"><br></span></p>
+    </div><div class="art-layout-cell layout-item-2" style="width: 25%">
+        <p style="text-align: left;"><span style="font-weight: bold; font-size: 16px;">Looking for Assistance?</span></p><p style="text-align: left;"><span style="font-weight: bold; font-size: 16px;">-</span> <a href="contact-us.html" title="See our contact information"><span style="color: rgb(147, 64, 16);">Contact Us</span></a></p><p style="text-align: left;"><span style="font-weight: bold; font-size: 16px;">-</span> Customer Care</p><p style="text-align: left; padding-left: 20px;">078 022 5890</p><p style="text-align: left; padding-left: 20px;">email@email.co.za</p><p style="text-align: left;"><span style="font-size: 16px; font-weight: bold; color: #000000;">- <a href="faqs.html" title="See the answers to questions that other people had..."><span style="color: rgb(158, 63, 16);">FAQ's</span></a></span><span style="font-weight: bold;"></span></p><p style="text-align: left; padding-left: 20px;"><span style="font-weight: bold;"><br></span></p>
+    </div><div class="art-layout-cell layout-item-2" style="width: 25%">
+        <p style="text-align: left;"><span style="font-weight: bold; font-size: 16px;">Privacy Policies</span></p><p style="text-align: left;"><span style="font-size: 16px; font-weight: bold;">-&nbsp;</span><a href="terms-and-conditions.html" title="View our terms and conditions">Terms and Conditions</a></p><p style="text-align: left;"><span style="font-size: 16px; font-weight: bold;">-</span> Pre-Order your items</p><p style="text-align: left;"><br></p><p><br></p>
+    </div><div class="art-layout-cell layout-item-2" style="width: 25%">
+        <p style="text-align: left;"><span style="font-weight: bold; font-size: 16px;">Social Media Platforms</span></p><p style="text-align: left;"><br></p><p style="text-align: left;">&nbsp;<a href="http://www.facebook.com/" title="Visit our facebook page" class="art-facebook-tag-icon" style="line-height: 32px;"></a>&nbsp;&nbsp;&nbsp;<a href="http://twitter.com/" title="Visit our twitter page" class="art-twitter-tag-icon" style="line-height: 32px;"></a>&nbsp; &nbsp;&nbsp;<a href="http:www.instagram.com/" title="Visit our instagram page" class="art-rss-tag-icon" style="line-height: 51px;"></a>&nbsp;&nbsp;<br></p>
+    </div>
+    </div>
+</div>
+</div>
+<div class="art-content-layout-wrapper layout-item-0">
+<div class="art-content-layout layout-item-1">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-2" style="width: 100%">
+        Horrell Peterson © 2019. All Rights Reserved.&nbsp;<a href="#">Privacy Policy</a>
+    </div>
+    </div>
+</div>
+</div>
+
+    <p class="art-page-footer">
+        <span id="art-footnote-links"><a href="http://www.artisteer.com/" target="_blank">Web Template</a> created with Artisteer.</span>
+    </p>
+  </div>
+</footer>
+
+</div>
+
+
+</body></html>
